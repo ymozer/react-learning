@@ -5,7 +5,7 @@ function Products(props){
 
   const pics = props.images.map((img) =>
     <div key={img.id}>
-      <p>{img.name}</p>
+      <p>{img.name} hh</p>
       <img alt='asd' src={img.src}></img>
     </div>
   );
