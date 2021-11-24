@@ -1,0 +1,26 @@
+.wrapper {
+    background: rgb(241, 232, 222);
+    font-family: sans-serif;
+    padding: 25px;
+}
+
+.p_card {
+    width: 300px;
+    height: 500px;
+    background: white;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0;
+}
+
+.p_pic {
+    max-width: 300px;
+}
+
+.p_bottom {
+    margin: auto;
+    background: wheat;
+    position: fixed;
+}

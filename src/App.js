@@ -1,30 +1,14 @@
 import './App.css';
-import imagesPool from './ImagePool';
-
-function Products(props){
-
-  const pics = props.images.map((img) =>
-    <div key={img.id}>
-      <p>{img.name} hh</p>
-      <img alt='asd' src={img.src}></img>
-    </div>
-  );
-
-  return (
-   <div>
-     {pics}
-   </div>
-  )
-} 
-
-const images = imagesPool
+import Products from'./Products/Products';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Products images={images} />
       </header>
+      <div className="Product">
+        <Products />
+      </div>
     </div>
   );
 }
