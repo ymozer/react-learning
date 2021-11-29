@@ -1,5 +1,9 @@
-import imagesPool from '../images/1_ImagePool';
+import React from 'react';
+import imagesPool from '../../images/1_ImagePool';
+import { Link } from 'react-router-dom'
 import './Products.css';
+import { Container, Row, Col } from 'react-bootstrap';
+
 
 function Product(props){
 
@@ -28,10 +32,20 @@ const images = imagesPool
 
 function Products() {
   return (
-    <div className="App">
+    <div className="Products">
       <header className="App-header">
-        <Product images={images} className="Ana" />
+        <nav>
+          <Link to="/">Home</Link>
+        </nav>
       </header>
+        <Container>
+          <Row sm={8}>
+            
+              <Product images={images} className="Ana" />
+            
+          </Row>
+        </Container>
+
     </div>
   );
 }
