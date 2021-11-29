@@ -6,10 +6,10 @@ const logo = './logo192.png'
 
 function Navbar() {
     return (
-        <div className='nav-wrapper'>
-            <Navi collapseOnSelect bg="dark" variant="dark" expand="lg"> {/**variant="light" is for light bg clolors then costumize with bg prop or any costum css*/}
-                <Container>
-                    <Navi.Brand href="#home">
+        <div>
+            <Navi className="navbar transparent navbar-inverse navbar-fixed-top" collapseOnSelect bg="dark" variant="dark" expand="lg"> {/**variant="light" is for light bg clolors then costumize with bg prop or any costum css*/}
+                <Container className="navbar-inner">
+                    <Navi.Brand  href="#home">
                         <img
                             src={logo}
                             width="30"
